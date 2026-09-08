@@ -3,8 +3,6 @@ name: Roq Site Deploy
 on:
   push:
     branches: [ main ]
-  schedule:
-    - cron: "0 19 * * *"  # 05:00 AEST daily, so future-dated posts publish
   workflow_dispatch:
 
 jobs:
