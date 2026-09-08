@@ -241,3 +241,6 @@ p { margin: 0 0 1rem; }
 .pagination ul { list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin: 1.5rem 0 0; padding: 0; }
 .pagination p { margin: 0; }
 .pagination .page-number { color: var(--fg-muted); font-size: 0.9rem; }
+
+/* Change B */
+.change-b { color: red; }
