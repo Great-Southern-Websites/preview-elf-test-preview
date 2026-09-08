@@ -1,0 +1,35 @@
+{@io.quarkiverse.roq.frontmatter.runtime.model.Site site}
+<!-- Structured data for search engines (schema.org). BUILDER: fill every field
+     from the business's own details; delete keys you have no real value for.
+     Keep it accurate when contact details, hours or locations change. -->
+<script type="application/ld+json">
+{|{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "|}{=site.url.absolute}{|#business",
+  "name": "Preview Elf Test",
+  "url": "|}{=site.url.absolute}{|",
+  "logo": "|}{=site.url('images/logo.png').absolute}{|",
+  "image": "|}{=site.url('images/logo.png').absolute}{|",
+  "description": "BUILDER: one sentence, the same as the home page description.",
+  "telephone": "+61 3 0000 0000",
+  "email": "hello@example.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1 Example Street",
+    "addressLocality": "Suburb",
+    "addressRegion": "VIC",
+    "postalCode": "3000",
+    "addressCountry": "AU"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "17:00" }
+  ],
+  "sameAs": [],
+  "potentialAction": {
+    "@type": "ReserveAction",
+    "name": "Book",
+    "target": "|}{=site.url('contact').absolute}{|"
+  }
+}|}
+</script>
